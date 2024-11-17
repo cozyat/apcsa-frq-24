@@ -3,8 +3,8 @@ import java.util.*;
 public class frq {
     /*
      * I defined this class because the stupid public type must be defined as frq.java
-     * Not all of the code is right, I just did this for fun
-     * It gets more insane as you progress thru each class
+     * Not all of the code is right and I only just did this for fun
+     * It gets more insane as you progress through each class
      * Do NOT ever attempt the gridPath class question
      */
 }
@@ -117,7 +117,6 @@ class Location {
 
 class GridPath {
     private int[][] grid;
-
     public Location getNextLoc(int row, int col) {
         int rowBelow = row + 1;
         int colRight = col + 1;
@@ -136,7 +135,6 @@ class GridPath {
 
     public int sumPath(int row, int col) {
         int sum = grid[row][col];
-
         while (row != grid.length - 1 && col != grid[0].length - 1) {
             Location nextGrid = getNextLoc(row, col);
             row = nextGrid.getRow();
